@@ -12,6 +12,7 @@ import java.awt.event.KeyEvent;
 import java.util.Vector;
 import java.lang.reflect.Constructor;
 
+import br.uffs.cc.jarena.AgenteTicoTeco;
 import br.uffs.cc.jarena.renders.simple2d.*;
 
 public class Arena implements Runnable {
@@ -58,7 +59,7 @@ public class Arena implements Runnable {
 		int i;
 
 		for (i = 0; i < 15; i++) {
-			adicionaEntidade(new AgenteDummy(0, 0, Constants.ENTIDADE_ENERGIA_INICIAL));						
+			adicionaEntidade(new AgenteTicoTeco(0, 0, Constants.ENTIDADE_ENERGIA_INICIAL));						
 			adicionaEntidade(new AgenteInimigo((int)(Constants.LARGURA_TELA * 0.95), 0, Constants.ENTIDADE_ENERGIA_INICIAL));						
 		}
 	}
