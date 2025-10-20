@@ -508,6 +508,6 @@ private Point encontrarCogumeloMaisProximoDe(Point referencePoint) {
     
     @Override
     public String getEquipe() {
-        return "GirinoEninja";
+        return "AgenteTicoTeco";
     }
 }
